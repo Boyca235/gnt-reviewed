@@ -8,20 +8,16 @@ class AdvertiseType extends Data
 {
     const list = [
         [
-            "id" => Constant::EVENTS,
-            "label" => "Evenement"
+            "id" => Constant::BANNER,
+            "label" => "Encarde"
         ],
         [
-            "id" => Constant::MEET,
-            "label" => "Rencontre"
+            "id" => Constant::COMMON_ADVERTISE,
+            "label" => "Pubs Ordinaire"
         ],
         [
-            "id" => Constant::ONLINE_MEET,
-            "label" => "Rencontre en ligne"
-        ],
-        [
-            "id" => Constant::ENTERTAINMENT,
-            "label" => "Divertissement"
+            "id" => Constant::VIDEO_ADS,
+            "label" => "Vidéo pubs"
         ],
     ];
 

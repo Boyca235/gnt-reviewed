@@ -39,4 +39,6 @@ abstract class Constant
     const MIDDLE_BANNER = "middle_banner";
     const BOTTOM_BANNER = "bottom_banner";
     const COMMON_ADVERTISE = "common_advertise";
+    const BANNER = "banner";
+    const VIDEO_ADS = "video_ads";
 }
