@@ -23,6 +23,10 @@ class EventType extends Data
             "id" => Constant::ENTERTAINMENT,
             "label" => "Divertissement"
         ],
+        [
+            "id" => Constant::NEWS,
+            "label" => "Nouveautés"
+        ],
     ];
 
     public function __construct()
