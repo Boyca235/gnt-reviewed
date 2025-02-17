@@ -1,47 +1,97 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+<!DOCTYPE html>
+<html lang="en">
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <title>GNT-connexion page</title>
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+    <!-- Favicons -->
+    <link href="src=" {{asset('admin/img/favicon.png')}}" rel="icon">
+    <link href="src=" {{asset('admin/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{asset('admin/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+    <!--external css-->
+    <link href="{{asset('admin/lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
+    <link href="{{asset('admin/css/style-responsive.css')}}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+    <div id="login-page">
+        <div class="container">
+            <form class="form-login" action="index.html">
+                <h2 class="form-login-heading">Connectez-vous maintenant</h2>
+                <div class="login-wrap">
+                    <input type="text" class="form-control" placeholder="User ID" autofocus autocomplete="username"
+                        autofocus>
+                    <br>
+                    <input type="password" class="form-control" name="password" autocomplete="current-password" placeholder="Password">
+                    <br>
+                    <input type="checkbox" value="remember-me"> Se souvenir de moi
+                    <span class="pull-right">
+                        <a data-toggle="modal" href="login.html#myModal"> Mot de passe oublié?</a>
+                    </span>
+                    <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i>
+                        Se connecter</button>
+                    <hr>
+                    <div class="login-social-link centered">
+                        <p>or vous pouvez vous connecter via vos reseaux sociaux</p>
+                        <button class="btn btn-facebook" type="submit"><i class="fa fa-facebook"></i> Facebook</button>
+                        <button class="btn btn-twitter" type="submit"><i class="fa fa-twitter"></i> Twitter</button>
+                    </div>
+                    <div class="registration">
+                        Pas de compte?<br />
+                        <a class="" href="#">
+                            Créer un compte
+                        </a>
+                    </div>
+                </div>
+                <!-- Modal -->
+                {{-- <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
+                    class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">Forgot Password ?</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Enter your e-mail address below to reset your password.</p>
+                                <input type="text" name="email" placeholder="Email" autofocus autocomplete="username"
+                                    class="form-control placeholder-no-fix">
+                            </div>
+                            <div class="modal-footer">
+                                <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+                                <button class="btn btn-theme" type="button">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> --}}
+                <!-- modal -->
+            </form>
         </div>
+    </div>
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="{{asset('admin/lib/jquery/jquery.min.js')}}"></script>
+    <script src="{{asset('admin/lib/bootstrap/js/bootstrap.min.js')}}"></script>
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src="{{asset('admin/lib/jquery.backstretch.min.js')}}"></script>
+    <script>
+        $.backstretch("{{asset('admin/img/login-bg.jpg')}}", {
+      speed: 500
+    });
+    </script>
+</body>
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
-                <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
-            </label>
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
-
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+</html>

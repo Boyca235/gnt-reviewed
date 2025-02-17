@@ -142,7 +142,7 @@
                     </div>
                     <div class="row">
                       <div class="col-md-3 centered hidden-sm hidden-xs">
-                        <img src="img/ui-danro.jpg" class="img-circle" width="65">
+                        <img src="{{asset('admin/img/ui-danro.jpg')}}" class="img-circle" width="65">
                       </div>
                       <div class="col-md-9">
                         <p>
@@ -180,7 +180,7 @@
                     <div class="white-header">
                       <h5>TOP USER</h5>
                     </div>
-                    <p><img src="img/ui-zac.jpg" class="img-circle" width="50"></p>
+                    <p><img src="{{asset('admin/img/ui-zac.jpg')}}" class="img-circle" width="50"></p>
                     <p><b>Zac Snider</b></p>
                     <div class="row">
                       <div class="col-md-6">
@@ -211,7 +211,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-4 mb">
                   <div class="product-panel-2 pn">
                     <div class="badge badge-hot">HOT</div>
-                    <img src="img/product.jpg" width="200" alt="">
+                    <img src="{{asset('admin/img/product.jpg')}}" width="200" alt="">
                     <h5 class="mt">Flat Pack Heritage</h5>
                     <h6>TOTAL SALES: 1388</h6>
                     <button class="btn btn-small btn-theme04">FULL REPORT</button>
@@ -223,7 +223,7 @@
                   <div class="content-panel pn">
                     <div id="profile-02">
                       <div class="user">
-                        <img src="img/friends/fr-06.jpg" class="img-circle" width="80">
+                        <img src="{{asset('admin/img/friends/fr-06.jpg')}}" class="img-circle" width="80">
                         <h4>DJ SHERMAN</h4>
                       </div>
                     </div>
@@ -356,7 +356,7 @@
               <!-- First Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="img/ui-divya.jpg" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-divya.jpg')}}" width="35px" height="35px" align="">
                 </div>
                 <div class="details">
                   <p>
@@ -368,7 +368,7 @@
               <!-- Second Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="img/ui-sherman.jpg" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-sherman.jpg')}}" width="35px" height="35px" align="">
                 </div>
                 <div class="details">
                   <p>
@@ -380,7 +380,7 @@
               <!-- Third Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="img/ui-danro.jpg" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-danro.jpg')}}" width="35px" height="35px" align="">
                 </div>
                 <div class="details">
                   <p>
@@ -392,7 +392,7 @@
               <!-- Fourth Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="img/ui-zac.jpg" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-zac.jpg')}}" width="35px" height="35px" align="">
                 </div>
                 <div class="details">
                   <p>

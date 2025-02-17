@@ -34,7 +34,7 @@
 <body>
     <section id="container">
         @include('layouts.admin.header')
-        @include('layouts.admin.aside')
+        @include('layouts.admin.aside-manager')
         <section id="main-content">
             @yield('body')
         </section>
