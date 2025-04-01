@@ -9,7 +9,7 @@ class EventType extends Data
     const list = [
         [
             "id" => Constant::EVENTS,
-            "label" => "Evenement"
+            "label" => "Événement"
         ],
         [
             "id" => Constant::MEET,

@@ -22,15 +22,16 @@
         <link rel="stylesheet" href="{{asset('site/css/left-fullwidth-grid.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('site/css/font-awesome.min.css')}}" type="text/css" media="all" />
         <link rel="stylesheet" href="{{asset('site/css/grid.css')}}" type="text/css" media="all" />
-   
+
     </head>
     <body>
+        @include('layouts.site.header-mobile')
         <div id="wrapper">
             @include('layouts.site.header')
             @yield('body')
             @include('layouts.site.footer')
         </div>
-        
+
         <script type="text/javascript" src="{{asset('site/js/jquery.js')}}"></script>
         <script>
             (function () {

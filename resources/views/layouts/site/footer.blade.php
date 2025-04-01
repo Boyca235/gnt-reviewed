@@ -1,26 +1,26 @@
 <br class="clear" />
 <div id="footer_mailchimp_subscription" class="one withsmallpadding ppb_mailchimp_subscription withbg">
     <div class="standard_wrapper">
-        <h2 class="ppb_title">Stay Updated</h2>
+        <h2 class="ppb_title">Restez connecter</h2>
 
         <!-- Mailchimp for WordPress v4.8.1 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
         <form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-618" method="post" data-id="618" data-name="Subscribe">
             <div class="mc4wp-form-fields">
                 <div class="subscribe_tagline">
-                    Get the recent popular stories straight into your inbox
+                    Recevez les nouvelles récentes directement dans votre boite mail
                 </div>
 
                 <div class="subscribe_form">
                     <p>
-                        <input type="email" name="EMAIL" placeholder="Email" required="" />
+                        <input type="email" name="EMAIL" placeholder="Adresse mail" required="" />
                     </p>
 
                     <p>
-                        <input type="submit" value="Sign up" />
+                        <input type="submit" value="S'inscrire" />
                     </p>
                 </div>
             </div>
-            <label style="display: none !important;">Leave this field empty if you're human: <input type="text"
+            <label style="display: none !important;">Laissez ce champ vide si vous êtes humain: <input type="text"
                     name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label>
             <input type="hidden" name="_mc4wp_timestamp" value="1654936620" /><input type="hidden" name="_mc4wp_form_id"
                 value="618" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" />
