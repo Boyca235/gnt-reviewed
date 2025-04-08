@@ -4,7 +4,7 @@
         @include('layouts.site.trending')
 
         <!-- Begin principle contain section -->
-        <div class="ppb_blog_grid_with_posts one nopadding" style="padding-top: 0 !important; padding: 0px 0 0px 0;">
+        <div class="ppb_blog_grid_with_posts one nopadding" style="padding-top: 0 !important;">
             <div class="standard_wrapper">
                 <div class="two_third div_wrapper"
                      style="background-image: url('{{asset('site/upload/hands-woman-laptop-working-960x640.jpg')}}');">

@@ -70,7 +70,7 @@
         </div>
 
         <div id="overlay_background_search">
-            <a id="search_close_button" class="tooltip" title="Close" href="javascript:;"><i class="fa fa-close"></i></a>
+            <a id="search_close_button" class="tooltip" title="Close" href="javascript:"><i class="fa fa-close"></i></a>
             <div class="search_wrapper">
                 <div class="search_content">
                     <form role="search" method="get" name="searchform" id="searchform" action="#">

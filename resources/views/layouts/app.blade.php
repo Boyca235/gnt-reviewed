@@ -57,7 +57,7 @@
     <script src="{{asset('admin/lib/zabuto_calendar.js')}}"></script>
     <script type="text/javascript">
         $(document).ready(function() {
-            var unique_id = $.gritter.add({
+            $.gritter.add({
             // (string | mandatory) the heading of the notification
             title: 'Welcome to Dashio!',
             // (string | mandatory) the text inside the notification
@@ -82,7 +82,7 @@
             trigger: "manual"
         });
         $("#date-popover").hide();
-        $("#date-popover").click(function(e) {
+        $("#date-popover").click(function() {
             $(this).hide();
         });
 

@@ -21,8 +21,8 @@
                     Meta dévoile des lunettes AR révolutionnaires : la fin des smartphones ?</a></li>
         </ul>
         <div class="newsticker_nav">
-            <a href="javascript:;" id="newsticker_prev16549366201450368853" class="newsticker_prev">Prev</a><a
-                href="javascript:;" id="newsticker_next16549366201450368853" class="newsticker_next">Next</a>
+            <a href="javascript:" id="newsticker_prev16549366201450368853" class="newsticker_prev">Prev</a><a
+                href="javascript:" id="newsticker_next16549366201450368853" class="newsticker_next">Next</a>
         </div>
     </div>
 </div>
