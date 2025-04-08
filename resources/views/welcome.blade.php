@@ -32,6 +32,61 @@
             @include('layouts.site.footer')
         </div>
 
+        <div id="overlay_background">
+            <div id="fullscreen_share_wrapper">
+                <div class="fullscreen_share_content">
+                    <div id="social_share_wrapper">
+                        <ul>
+                            <li>
+                                <a class="tooltip" title="Share On Facebook" target="_blank" href="https://max-themes.net/demos/login.php-52.xhtml?u=https://themes.themegoods.com/grandnews/demo2/"><i class="fa fa-facebook marginright"></i></a>
+                            </li>
+                            <li>
+                                <a
+                                    class="tooltip"
+                                    title="Share On Twitter"
+                                    target="_blank"
+                                    href="#"
+                                >
+                                    <i class="fa fa-twitter marginright"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    class="tooltip"
+                                    title="Share On Pinterest"
+                                    target="_blank"
+                                    href="#"
+                                >
+                                    <i class="fa fa-pinterest marginright"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="tooltip" title="Share by Email" href="#"><i class="fa fa-envelope marginright"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="overlay_background_search">
+            <a id="search_close_button" class="tooltip" title="Close" href="javascript:;"><i class="fa fa-close"></i></a>
+            <div class="search_wrapper">
+                <div class="search_content">
+                    <form role="search" method="get" name="searchform" id="searchform" action="#">
+                        <div>
+                            <input type="text" value="" name="s" id="s" autocomplete="off" placeholder="Enter Keyword" />
+                            <div class="search_tagline">Press enter/return to begin your search</div>
+                            <button>
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                        <div id="autocomplete"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <script type="text/javascript" src="{{asset('site/js/jquery.js')}}"></script>
         <script>
             (function () {

@@ -14,6 +14,7 @@ Route::get('/', [HomeController::class, 'index'])->name('site.accueil');
 
 Route::prefix('site')->group(function () {
     Route::get('event', [EventsController::class, 'index'])->name('site.event');
+    Route::get('meet', [EventsController::class, 'meet'])->name('site.meet');
 });
 Route::get('/dashboard', function () {
     return view('dashboard');

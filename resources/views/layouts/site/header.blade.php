@@ -27,7 +27,7 @@
                             <ul id="main_menu" class="nav">
                                 <li class="menu-item"><a href="{{route('site.accueil')}}" data-cat="11">Accueil</a></li>
                                 <li class="menu-item"><a href="{{route('site.event')}}" data-cat="9">Événements</a></li>
-                                <li class="menu-item"><a href="entertainment.html" data-cat="9">Rencontres</a></li>
+                                <li class="menu-item"><a href="{{route('site.meet')}}" data-cat="9">Rencontres</a></li>
                                 <li class="menu-item"><a href="entertainment.html" data-cat="9">Divertissements</a></li>
                                 <li class="menu-item"><a href="entertainment.html" data-cat="9">Nouveautés</a></li>
 {{--                                <li class="menu-item menu-item-has-children arrow">--}}

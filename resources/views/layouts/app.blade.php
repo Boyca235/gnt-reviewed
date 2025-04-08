@@ -18,7 +18,7 @@
     <!--external css-->
     <link href="{{asset('admin/lib/font-awesome/css/font-awesome.css')}}" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="{{asset('admin/css/zabuto_calendar.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{('admin/lib/gritter/css/jquery.gritter.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('admin/lib/gritter/css/jquery.gritter.css')}}" />
     <!-- Custom styles for this template -->
     <link href="{{asset('admin/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('admin/css/style-responsive.css')}}" rel="stylesheet">
@@ -71,7 +71,7 @@
             // (string | optional) the class name you want to apply to that specific message
             class_name: 'my-sticky-class'
             });
-            
+
             return false;
         });
     </script>

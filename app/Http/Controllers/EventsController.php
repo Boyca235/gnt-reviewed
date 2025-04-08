@@ -14,6 +14,13 @@ class EventsController extends Controller
     {
         return view('pages.site.events');
     }
+    /**
+     * Display a listing of the resource.
+     */
+    public function meet()
+    {
+        return view('pages.site.meets');
+    }
 
     /**
      * Show the form for creating a new resource.

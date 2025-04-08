@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="Dashboard">
-    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <meta name="keyword" content="Dashboard, GNT, Login">
     <title>GNT-connexion page</title>
 
     <!-- Favicons -->
-    <link href="src=" {{asset('admin/img/favicon.png')}}" rel="icon">
-    <link href="src=" {{asset('admin/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="src={{asset('admin/img/favicon.png')}}" rel="icon">
+    <link href="src={{asset('admin/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('admin/lib/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -28,19 +28,19 @@
       *********************************************************************************************************************************************************** -->
     <div id="login-page">
         <div class="container">
-            <form class="form-login" action="index.html">
+            <form class="form-login" method="POST" action="{{ route('login') }}">
+                @csrf
                 <h2 class="form-login-heading">Connectez-vous maintenant</h2>
                 <div class="login-wrap">
-                    <input type="text" class="form-control" placeholder="User ID" autofocus autocomplete="username"
-                        autofocus>
+                    <input type="email" class="form-control" placeholder="Adresse mail" autofocus autocomplete="username" name="email">
                     <br>
-                    <input type="password" class="form-control" name="password" autocomplete="current-password" placeholder="Password">
+                    <input type="password" class="form-control" name="password" autocomplete="current-password" placeholder="Mot de passe">
                     <br>
                     <input type="checkbox" value="remember-me"> Se souvenir de moi
                     <span class="pull-right">
                         <a data-toggle="modal" href="login.html#myModal"> Mot de passe oublié?</a>
                     </span>
-                    <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i>
+                    <button class="btn btn-theme btn-block" type="submit"><i class="fa fa-lock"></i>
                         Se connecter</button>
                     <hr>
                     <div class="login-social-link centered">
@@ -56,27 +56,27 @@
                     </div>
                 </div>
                 <!-- Modal -->
-                {{-- <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"
-                    class="modal fade">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                    aria-hidden="true">&times;</button>
-                                <h4 class="modal-title">Forgot Password ?</h4>
-                            </div>
-                            <div class="modal-body">
-                                <p>Enter your e-mail address below to reset your password.</p>
-                                <input type="text" name="email" placeholder="Email" autofocus autocomplete="username"
-                                    class="form-control placeholder-no-fix">
-                            </div>
-                            <div class="modal-footer">
-                                <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
-                                <button class="btn btn-theme" type="button">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
+{{--                 <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal"--}}
+{{--                    class="modal fade">--}}
+{{--                    <div class="modal-dialog">--}}
+{{--                        <div class="modal-content">--}}
+{{--                            <div class="modal-header">--}}
+{{--                                <button type="button" class="close" data-dismiss="modal"--}}
+{{--                                    aria-hidden="true">&times;</button>--}}
+{{--                                <h4 class="modal-title">Forgot Password ?</h4>--}}
+{{--                            </div>--}}
+{{--                            <div class="modal-body">--}}
+{{--                                <p>Enter your e-mail address below to reset your password.</p>--}}
+{{--                                <input type="text" name="email" placeholder="Email" autofocus autocomplete="username"--}}
+{{--                                    class="form-control placeholder-no-fix">--}}
+{{--                            </div>--}}
+{{--                            <div class="modal-footer">--}}
+{{--                                <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>--}}
+{{--                                <button class="btn btn-theme" type="submit">Submit</button>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
                 <!-- modal -->
             </form>
         </div>
