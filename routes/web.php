@@ -16,9 +16,9 @@ Route::prefix('site')->group(function () {
     Route::get('event', [EventsController::class, 'index'])->name('site.event');
     Route::get('meet', [EventsController::class, 'meet'])->name('site.meet');
 });
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -26,6 +26,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('admin_page', [AdminController::class, 'index'])->name('admin.home');
+//Route::get('admin_page', [AdminController::class, 'index'])->name('admin.home');
+Route::get('/dashboard', [AdminController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';

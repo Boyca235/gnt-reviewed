@@ -28,8 +28,8 @@
                                 <li class="menu-item"><a href="{{route('site.accueil')}}" data-cat="11">Accueil</a></li>
                                 <li class="menu-item"><a href="{{route('site.event')}}" data-cat="9">Événements</a></li>
                                 <li class="menu-item"><a href="{{route('site.meet')}}" data-cat="9">Rencontres</a></li>
-                                <li class="menu-item"><a href="entertainment.html" data-cat="9">Divertissements</a></li>
-                                <li class="menu-item"><a href="entertainment.html" data-cat="9">Nouveautés</a></li>
+                                <li class="menu-item"><a href="#" data-cat="9">Divertissements</a></li>
+                                <li class="menu-item"><a href="#" data-cat="9">Nouveautés</a></li>
 {{--                                <li class="menu-item menu-item-has-children arrow">--}}
 {{--                                    <a href="magnificent-image-of-the-new-hoover-dam-bridge-taking-shape.html">Single--}}
 {{--                                        Post</a>--}}
@@ -119,11 +119,11 @@
                     <div id="logo_right_button">
 
                         <!-- Begin search icon -->
-                        <a href="javascript:;" id="search_icon"><i class="fa fa-search"></i></a>
+                        <a href="javascript:" id="search_icon"><i class="fa fa-search"></i></a>
                         <!-- End side menu -->
 
                         <!-- Begin search icon -->
-                        <a href="javascript:;" id="mobile_nav_icon"></a>
+                        <a href="javascript:" id="mobile_nav_icon"></a>
                         <!-- End side menu -->
                     </div>
                     <!-- End right corner buttons -->

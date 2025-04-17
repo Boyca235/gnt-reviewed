@@ -27,11 +27,11 @@
                                             <span>
                                                 <a href="#">Rencontre</a>
                                                 &nbsp;/
-                                                <a href="singleblog.html">Life Style</a>
+                                                <a href="#">Life Style</a>
                                                 &nbsp;/
-                                                <a href="singleblog.html">Style</a>
+                                                <a href="#">Style</a>
                                                 &nbsp;/
-                                                <a href="singleblog.html">Top News</a>
+                                                <a href="#">Top News</a>
                                             </span>
                                         </div>
 
