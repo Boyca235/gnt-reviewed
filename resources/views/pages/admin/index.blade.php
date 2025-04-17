@@ -5,7 +5,7 @@
             <div class="col-lg-9 main-chart">
               <!--CUSTOM CHART START -->
               <div class="border-head">
-                <h3>USER VISITS</h3>
+                <h3>Visite des utilisateurs</h3>
               </div>
               <div class="custom-bar-chart">
                 <ul class="y-axis">
@@ -29,19 +29,19 @@
                   <div class="value tooltips" data-original-title="6.000" data-toggle="tooltip" data-placement="top">60%</div>
                 </div>
                 <div class="bar ">
-                  <div class="title">APR</div>
+                  <div class="title">AVR</div>
                   <div class="value tooltips" data-original-title="4.500" data-toggle="tooltip" data-placement="top">45%</div>
                 </div>
                 <div class="bar">
-                  <div class="title">MAY</div>
+                  <div class="title">MAI</div>
                   <div class="value tooltips" data-original-title="3.200" data-toggle="tooltip" data-placement="top">32%</div>
                 </div>
                 <div class="bar ">
-                  <div class="title">JUN</div>
+                  <div class="title">JUIN</div>
                   <div class="value tooltips" data-original-title="6.200" data-toggle="tooltip" data-placement="top">62%</div>
                 </div>
                 <div class="bar">
-                  <div class="title">JUL</div>
+                  <div class="title">JUIL</div>
                   <div class="value tooltips" data-original-title="7.500" data-toggle="tooltip" data-placement="top">75%</div>
                 </div>
               </div>
@@ -55,7 +55,7 @@
                     </div>
                     <canvas id="serverstatus01" height="120" width="120"></canvas>
                     <script>
-                      var doughnutData = [{
+                      let doughnutData = [{
                           value: 70,
                           color: "#FF6B6B"
                         },
@@ -64,7 +64,7 @@
                           color: "#fdfdfd"
                         }
                       ];
-                      var myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
+                      let myDoughnut = new Chart(document.getElementById("serverstatus01").getContext("2d")).Doughnut(doughnutData);
                     </script>
                     <div class="row">
                       <div class="col-sm-6 col-xs-6 goleft">
@@ -85,7 +85,7 @@
                     </div>
                     <canvas id="serverstatus02" height="120" width="120"></canvas>
                     <script>
-                      var doughnutData = [{
+                      let doughnutData = [{
                           value: 60,
                           color: "#1c9ca7"
                         },
@@ -94,7 +94,7 @@
                           color: "#f68275"
                         }
                       ];
-                      var myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
+                      let myDoughnut = new Chart(document.getElementById("serverstatus02").getContext("2d")).Doughnut(doughnutData);
                     </script>
                     <p>April 17, 2014</p>
                     <footer>
@@ -129,8 +129,8 @@
                 <div class="col-md-4 mb">
                   <div class="weather pn">
                     <i class="fa fa-cloud fa-4x"></i>
-                    <h2>11º C</h2>
-                    <h4>BUDAPEST</h4>
+                    <h2>21º C</h2>
+                    <h4>Libreville</h4>
                   </div>
                 </div>
                 <!-- /col-md-4-->
@@ -142,7 +142,7 @@
                     </div>
                     <div class="row">
                       <div class="col-md-3 centered hidden-sm hidden-xs">
-                        <img src="{{asset('admin/img/ui-danro.jpg')}}" class="img-circle" width="65">
+                        <img src="{{asset('admin/img/ui-danro.jpg')}}" class="img-circle" width="65" alt="image">
                       </div>
                       <div class="col-md-9">
                         <p>
@@ -180,7 +180,7 @@
                     <div class="white-header">
                       <h5>TOP USER</h5>
                     </div>
-                    <p><img src="{{asset('admin/img/ui-zac.jpg')}}" class="img-circle" width="50"></p>
+                    <p><img src="{{asset('admin/img/ui-zac.jpg')}}" class="img-circle" width="50" alt="image"></p>
                     <p><b>Zac Snider</b></p>
                     <div class="row">
                       <div class="col-md-6">
@@ -223,7 +223,7 @@
                   <div class="content-panel pn">
                     <div id="profile-02">
                       <div class="user">
-                        <img src="{{asset('admin/img/friends/fr-06.jpg')}}" class="img-circle" width="80">
+                        <img src="{{asset('admin/img/friends/fr-06.jpg')}}" class="img-circle" width="80" alt="image">
                         <h4>DJ SHERMAN</h4>
                       </div>
                     </div>
@@ -243,7 +243,7 @@
                     </div>
                     <canvas id="serverstatus03" height="120" width="120"></canvas>
                     <script>
-                      var doughnutData = [{
+                      let doughnutData = [{
                           value: 60,
                           color: "#2b2b2b"
                         },
@@ -252,7 +252,7 @@
                           color: "#fffffd"
                         }
                       ];
-                      var myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData);
+                      let myDoughnut = new Chart(document.getElementById("serverstatus03").getContext("2d")).Doughnut(doughnutData);
                     </script>
                     <h3>60% USED</h3>
                   </div>
@@ -271,7 +271,7 @@
                 <h4>COMPLETED ACTIONS & PROGRESS</h4>
                 <canvas id="newchart" height="130" width="130"></canvas>
                 <script>
-                  var doughnutData = [{
+                  let doughnutData = [{
                       value: 70,
                       color: "#4ECDC4"
                     },
@@ -280,7 +280,7 @@
                       color: "#fdfdfd"
                     }
                   ];
-                  var myDoughnut = new Chart(document.getElementById("newchart").getContext("2d")).Doughnut(doughnutData);
+                  let myDoughnut = new Chart(document.getElementById("newchart").getContext("2d")).Doughnut(doughnutData);
                 </script>
               </div>
               <!--NEW EARNING STATS -->
@@ -356,7 +356,7 @@
               <!-- First Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="{{asset('admin/img/ui-divya.jpg')}}" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-divya.jpg')}}" width="35px" height="35px"  alt="image">
                 </div>
                 <div class="details">
                   <p>
@@ -368,7 +368,7 @@
               <!-- Second Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="{{asset('admin/img/ui-sherman.jpg')}}" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-sherman.jpg')}}" width="35px" height="35px"  alt="image">
                 </div>
                 <div class="details">
                   <p>
@@ -380,7 +380,7 @@
               <!-- Third Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="{{asset('admin/img/ui-danro.jpg')}}" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-danro.jpg')}}" width="35px" height="35px" alt="image">
                 </div>
                 <div class="details">
                   <p>
@@ -392,7 +392,7 @@
               <!-- Fourth Member -->
               <div class="desc">
                 <div class="thumb">
-                  <img class="img-circle" src="{{asset('admin/img/ui-zac.jpg')}}" width="35px" height="35px" align="">
+                  <img class="img-circle" src="{{asset('admin/img/ui-zac.jpg')}}" width="35px" height="35px" alt="image">
                 </div>
                 <div class="details">
                   <p>
