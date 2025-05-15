@@ -23,6 +23,8 @@ abstract class Constant
     const ADVERTISE = "advertise";
     const MANAGER = "manager";
     const ADMIN = "administrator";
+    const GUEST = "guest";
+    const SUBSCRIBER = "subscriber";
     const MEET = "meet";
     const EVENTS = "events";
     const ONLINE_MEET = "online_meet";
@@ -41,4 +43,8 @@ abstract class Constant
     const COMMON_ADVERTISE = "common_advertise";
     const BANNER = "banner";
     const VIDEO_ADS = "video_ads";
+    const ACTIVE = "Active";
+    const WAITING = "Waiting";
+    const EXPIRED = "Expired";
+    const REMOVED = "Removed";
 }
