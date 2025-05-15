@@ -1,5 +1,6 @@
 <?php
 
+use App\Data\ContainStatus;
 use App\Data\ContainType;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -17,6 +18,7 @@ return new class extends Migration
             $table->foreignId('publisher_id')->nullable()->constrained('users')->onDelete('cascade')->onUpdate('cascade');
             $table->string('title');
             $table->enum('type',ContainType::getCodes())->nullable();
+            $table->enum('status',ContainStatus::getCodes())->nullable();
             $table->text('pub_contains')->nullable();
             $table->json('addtionnal_info')->nullable();
             $table->text('files')->nullable();

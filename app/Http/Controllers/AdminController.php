@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -11,7 +12,16 @@ class AdminController extends Controller
      */
     public function index()
     {
-        return view('pages.admin.index');
+        $connectedUser = Auth::user();
+        return view('pages.admin.index', ["user" => $connectedUser]);
+    }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function profile()
+    {
+        return view('pages.admin.profile.profile');
     }
 
     /**
