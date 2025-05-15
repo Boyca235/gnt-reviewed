@@ -25,7 +25,7 @@
                     <!-- /col-md-4 -->
                     <div class="col-md-4 centered">
                         <div class="profile-pic">
-                            <p><img src="img/ui-sam.jpg" class="img-circle"></p>
+                            <p><img src="{{asset('admin/img/ui-sam.jpg')}}" class="img-circle" alt=""></p>
                             <p>
                                 <button class="btn btn-theme"><i class="fa fa-check"></i> Follow</button>
                                 <button class="btn btn-theme02">Add</button>
@@ -116,37 +116,37 @@
                                         <div class="row centered mb">
                                             <ul class="my-friends">
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-01.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-01.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-02.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-02.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-03.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-03.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-04.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-04.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-05.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-05.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-06.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-06.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-07.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-07.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-08.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-08.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-09.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-09.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-10.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-10.jpg')}}" alt=""></div>
                                                 </li>
                                                 <li>
-                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="img/friends/fr-11.jpg"></div>
+                                                    <div class="friends-pic"><img class="img-circle" width="35" height="35" src="{{asset('admin/img/friends/fr-11.jpg')}}" alt=""></div>
                                                 </li>
                                             </ul>
                                             <div class="row mt">
@@ -217,7 +217,7 @@
                                             </p>
                                             <br>
                                             <p>
-                                                Email: hello@dashiotheme.com<br/> Skype: UseDashio<br/> Website: http://Alvarez.is
+                                                Email: hello@dashiotheme.com<br/> Skype: UseDashio<br/> Website: https://test.com
                                             </p>
                                         </div>
                                     </div>
