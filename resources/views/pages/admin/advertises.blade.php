@@ -24,7 +24,7 @@
                             <tbody>
                             <tr>
                                 <td>
-                                    <a href="basic_table.html#">Company Ltd</a>
+                                    <a href="#basic_table.html#">Company Ltd</a>
                                 </td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>12000.00$ </td>
@@ -37,7 +37,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="basic_table.html#">
+                                    <a href="#basic_table.html#">
                                         Dashio co
                                     </a>
                                 </td>
@@ -52,7 +52,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="basic_table.html#">
+                                    <a href="#basic_table.html#">
                                         Another Co
                                     </a>
                                 </td>
@@ -67,7 +67,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="basic_table.html#">Dashio ext</a>
+                                    <a href="#basic_table.html#">Dashio ext</a>
                                 </td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>22000.50$ </td>
@@ -80,7 +80,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="basic_table.html#">Total Ltd</a>
+                                    <a href="#basic_table.html#">Total Ltd</a>
                                 </td>
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>12120.00$ </td>

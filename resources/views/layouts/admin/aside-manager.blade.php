@@ -6,7 +6,11 @@
     <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-            <p class="centered"><a href="{{route('admin.profile')}}"><img src="{{asset('admin/img/ui-sam.jpg')}}" class="img-circle" width="80"></a></p>
+            <p class="centered">
+                <a href="{{route('admin.profile')}}">
+                    <img src="{{asset('admin/img/ui-sam.jpg')}}" class="img-circle" width="80" alt="">
+                </a>
+            </p>
             <h5 class="centered">{{ Auth::user()->name }}</h5>
             <li class="mt">
                 <a class="active" href="{{route('dashboard')}}">
@@ -21,7 +25,7 @@
                 </a>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;">
+                <a href="javascript:">
                     <i class="fa fa-globe"></i>
                     <span>Publications</span>
                 </a>
@@ -53,7 +57,7 @@
                 </ul>
             </li>
             <li class="sub-menu">
-                <a href="javascript:;">
+                <a href="javascript:">
                     <i class="fa fa-calendar"></i>
                     <span>Evènement</span>
                 </a>
