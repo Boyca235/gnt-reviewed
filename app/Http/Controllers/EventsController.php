@@ -14,6 +14,15 @@ class EventsController extends Controller
     {
         return view('pages.site.events');
     }
+
+    /**
+     * Display a listing of the resource.
+     */
+    public function indexAdmin()
+    {
+        return view('pages.admin.events');
+    }
+
     /**
      * Display a listing of the resource.
      */

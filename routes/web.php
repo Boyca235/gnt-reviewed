@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdvertiseController;
+use App\Http\Controllers\ContainsController;
 use App\Http\Controllers\EventsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
@@ -27,6 +29,15 @@ Route::middleware('auth')->group(function () {
 });
 
 //Route::get('admin_page', [AdminController::class, 'index'])->name('admin.home');
-Route::get('/dashboard', [AdminController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'verified'])->group(function (){
+    Route::prefix("manager")->group(function (){
+        Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
+        Route::get('/admin-profile', [AdminController::class, 'profile'])->name('admin.profile');
+        Route::get('/advertise', [AdvertiseController::class, 'index'])->name('admin.pubs');
+        Route::get('/publications/{attr}', [ContainsController::class, 'index'])->name('admin.contains');
+        Route::get('/evenements/{attr}', [EventsController::class, 'indexAdmin'])->name('admin.events');
+    });
+});
+
 
 require __DIR__.'/auth.php';
